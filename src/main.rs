@@ -9,7 +9,7 @@ fn main() {
     let root = match fs::read_dir("/") {
         Ok(root) => root,
         Err(e) => {
-            eprintln!("Error: {}", e);
+            eprintln!("12Error: {}", e);
             return;
         }
     };
@@ -31,7 +31,7 @@ fn main() {
                 println!("{}", path_str);
             }
             Err(e) => {
-                eprintln!("Error: {}", e);
+                eprintln!("34Error: {}", e);
             }
         }
     }
@@ -41,7 +41,7 @@ fn list_dir(dir: &str) {
     let dir = match fs::read_dir(dir) {
         Ok(dir) => dir,
         Err(e) => {
-            eprintln!("Error: {}", e);
+            eprintln!("44Error: {}", e);
             return;
         }
     };
@@ -63,7 +63,7 @@ fn list_dir(dir: &str) {
                 println!("{}", path_str);
             }
             Err(e) => {
-                eprintln!("Error: {}", e);
+                eprintln!("66Error: {}", e);
             }
         }
     }
